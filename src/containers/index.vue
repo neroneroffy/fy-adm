@@ -24,7 +24,7 @@
           <el-menu
               :uniqueOpened="true"
               default-active="2"
-              class="el-menu-vertical-demo"
+              class="fy-el-menu-vertical"
               @open="handleOpen"
               @close="handleClose"
           >
