@@ -1,0 +1,105 @@
+  @import "../../common/index.less";
+.fy-container {
+  height: calc(100vh);
+  .fy-aside {
+    width: 250px !important;
+    height: calc(100vh);
+    position: relative;
+    .fy-logo {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      z-index: 1200;
+      color: #fff;
+      top: 5px;
+      left: 5px;
+      font-size: 36px;
+      line-height: 50px;
+      cursor: pointer;
+    }
+    .fy-menu-primary {
+      height: calc(100vh);
+      ::v-deep{
+        .el-tabs__header {
+          background: #282C34 !important;
+          padding: 60px 0 0 0;
+        }
+        .el-tabs__nav-prev {
+          display: none;
+        }
+        .el-tabs__item {
+          color: #fff;
+          border-right: none;
+          padding: 4px 8px 4px 4px;
+          height: 50px;
+          margin-bottom: @padding-medium;
+        }
+        .el-tabs__nav-wrap::after {
+          display: none;
+        }
+        .el-tabs__active-bar {
+          display: none;
+        }
+        .fy-tab-item-btn {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          border-radius: @border-radius-base;
+          text-align: center;
+          transition: all .3s ease-in;
+
+          .fy-tab-item-icon {
+            line-height: 0px;
+            font-size: 16px;
+            position: relative;
+            top: 8px;
+          }
+          .fy-tab-item-text {
+            line-height: 14px;
+            margin-top: 16px;
+          }
+        }
+        .is-active .fy-tab-item-btn {
+          background: #1890ff;
+        }
+      }
+
+    }
+    .el-menu-item, .el-submenu {
+      text-align: left;
+    }
+  }
+}
+.el-header, .el-footer {
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+
+.el-aside {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+}
+
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
+}

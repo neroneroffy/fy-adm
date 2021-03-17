@@ -1,0 +1,23 @@
+{
+  "name": "fy-adm",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^1.0.2-beta.35",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.5",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.5",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "vite": "^2.1.0",
+    "vite-plugin-style-import": "^0.8.1"
+  }
+}
